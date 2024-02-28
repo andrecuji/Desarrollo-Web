@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        background-color: #9599C2;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    fieldset {
+        padding: 60px;
+        border: 5px solid #ffffff;
+        margin-bottom: 20px;
+    }
+
+    legend {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    input[type="range"] {
+        width: 100%;
+    }
+
+    center {
+        margin-top: 20px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    input[type="reset"] {
+        background-color: #f44336;
+    }
+
+    input[type="file"] {
+        margin-top: 10px;
+    }
+</style>
+<body>
+ 
+    <h1>FORMULARIO DE HOJA DE VIDA</h1>
+
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+                <label>Nombre:</label><br>
+                <input type="text" id="nombre" name=""><br><br>
+                <label>Apellido:</label><br>
+                <input type="text" id="apellido"><br><br>
+                <label>Fecha de Nacimiento:</label><br>
+                <input type="date" id="Fecha"><br><br>
+                <label> Telefono:</label><br>
+                <input type="tel" id="Telefono" ><br><br>
+                <label>Correo:</label><br>
+                <input type="email" id="Correo"><br><br>
+
+                <label>Tipo de Documento</label><br>
+                <select name="Tipo" id="">
+                    <option value="seleccionar" selected="SELECCIONA">-Selecciona-</option>
+                    <option value="">CEDULA DE CIUDADANIA</option>
+                    <option value="">TARGETA DE IDENTIDAD</option>
+                    <option value="">RUT</option>
+                    <option value="">PASAPORTE</option>
+                    <option value="">TARGETA PROFESIONAL</option>
+                </select>
+                <br><br>
+                Numero : <input type="number" id="Docuemnto" maxlength="10"><br>
+                <br>
+                <label for="sexo">Sexo</label><br>
+                <input type="radio" name="sexo" value="hombre" > Hombre <br>
+                <input type="radio" name="sexo" value="Mujer" > Mujer <br>
+                <input type="radio" name="sexo" value="Otro" > Otro <br>
+
+            
+        </fieldset>
+    </form>
+<br>
+    <form>
+        <fieldset>
+            <legend>Datos Profesionales</legend>
+            <label>Nivel de Estudio:</label><br>
+                <select name="Nivel" id="">
+                    <option value="seleccionar" selected="SELECCIONA">-Selecciona-</option>
+                    <option value="">BACHILLER</option>
+                    <option value="">TECNICO</option>
+                    <option value="">TECNOLOGO</option>
+                    <option value="">PROFESIONAL</option>
+                    <option value="">ESPECIALISTA</option>
+                    <option value="">MAGISTER</option>
+                    <option value="">DOCTORADO</option>
+                </select>
+            <br><br>
+            <label>Nombre del Titulo:</label> <br>
+            <input type="text" id="Titulo" name="" size="60"><br><br>
+            <label>¿En que Universidad?:</label> <br>
+            <input type="text" id="Lugar" name="" size="60"><br><br>
+            <label>Año de Graduacion:</label> <br>
+            <input type="month" id="Graduacion" name=""><br>
+            <br>
+            <label>Idiomas:</label><br>
+            <ul>
+                <li>Español <input type="range" name="Idiomas" min="0" max="5"><br></li>
+                <li>Ingles  <input type="range" name="Idiomas" min="0" max="5"><br></li>
+                <li>Ruso    <input type="range" name="Idiomas" min="0" max="5"><br></li>
+                <li>Frances  <input type="range" name="Idiomas" min="0" max="5"><br></li>
+                <li>Chino Mandarin <input type="range" name="Idiomas" min="0" max="5"><br></li>
+            </ul>
+
+            <br>
+            <label>Cuentanos tu experiencia laboral :</label><br>
+            <textarea name="experiencia" id="laboral" cols="70" rows="10"></textarea>
+
+            <br><br>
+            <label>Envianos tu Hoja de Vida</label><br>
+            <input type="file">
+
+            <center>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reiniciar">
+            </center>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
